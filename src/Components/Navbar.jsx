@@ -51,7 +51,7 @@ function Navbar() {
 
 				<div
 					className="bg-[#39DB4A]  text-white rounded-full flex items-center justify-center 
-								px-4 py-2 cursor-pointer shadow-xl transform transition-transform hover:scale-110"
+								px-4 py-2 mt-[-8px] cursor-pointer shadow-xl transform transition-transform hover:scale-110"
 				>
 					<div className="mr-2">
 						<LuPhoneCall />
