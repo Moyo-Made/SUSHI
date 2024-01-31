@@ -3,9 +3,15 @@ import React, { useState } from "react";
 import { FiSearch } from "react-icons/fi";
 import { RiShoppingBagLine } from "react-icons/ri";
 import { LuPhoneCall } from "react-icons/lu";
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 function Navbar() {
 	const [open, setOpen] = useState(false);
+	const [activeLink, setActiveLink] = useState(null);
+
+	const handleClick = (index) => {
+		setActiveLink(index);
+	};
 	return (
 		<div className="flex items-center justify-evenly p-4">
 			{/* Logo */}
@@ -17,20 +23,51 @@ function Navbar() {
 			</h1>
 
 			{/* Navigation Links */}
-			<div className=" flex space-x-3">
-				<a href="" className="p-4">
+			<div className="flex items-center space-x-3 font-bold">
+				<a
+					href=""
+					className={`p-4 ${
+						activeLink === 0 ? "text-[#39DB4A]" : "text-black"
+					}`}
+					onClick={() => handleClick(0)}
+				>
 					Home
 				</a>
-				<a href="" className="p-4">
-					Menu
+				<a
+					href=""
+					className={`p-4 flex items-center ${
+						activeLink === 1 ? "text-[#39DB4A]" : "text-black"
+					}`}
+					onClick={() => handleClick(1)}
+				>
+					Menu <RiArrowDropDownLine className=" text-[#39DB4A] text-2xl" />
 				</a>
-				<a href="" className="p-4">
+
+				<a
+					href=""
+					className={`p-4 ${
+						activeLink === 2 ? "text-[#39DB4A]" : "text-black"
+					}`}
+					onClick={() => handleClick(2)}
+				>
 					About Us
 				</a>
-				<a href="" className="p-4">
-					Services
+				<a
+					href=""
+					className={`p-4 flex items-center ${
+						activeLink === 3 ? "text-[#39DB4A]" : "text-black"
+					}`}
+					onClick={() => handleClick(3)}
+				>
+					Services <RiArrowDropDownLine className=" text-[#39DB4A] text-2xl" />
 				</a>
-				<a href="" className="p-4">
+				<a
+					href=""
+					className={`p-4 ${
+						activeLink === 4 ? "text-[#39DB4A]" : "text-black"
+					}`}
+					onClick={() => handleClick(4)}
+				>
 					Offers
 				</a>
 			</div>
