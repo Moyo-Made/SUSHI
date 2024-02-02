@@ -101,14 +101,11 @@ function Navbar() {
 					</div>
 				</div>
 
-				<div
-					className="bg-[#39DB4A]  text-white rounded-full flex items-center justify-center 
-								px-4 py-2 mt-[-8px] cursor-pointer shadow-xl transform transition-transform hover:scale-110"
-				>
+				<div className="button">
 					<div className="mr-2">
 						<LuPhoneCall />
 					</div>
-					<div className="font-bold ">
+					<div className="font-semibold">
 						<h4>Contact</h4>
 					</div>
 				</div>
