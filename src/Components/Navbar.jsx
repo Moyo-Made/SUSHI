@@ -15,7 +15,7 @@ function Navbar() {
 		setOpenMenu(false);
 	};
 	return (
-		<div className="flex flex-col md:flex-row items-center justify-evenly p-4">
+		<div className="flex flex-col md:flex-row items-center justify-evenly p-2 shadow-md">
 			{/* Logo */}
 			<h1 className="text-xl font-bold">
 				<span className="bg-[#39DB4A] bg-origin-border rounded-md px-1.5 text-white">
