@@ -39,7 +39,7 @@ function Hero() {
 			</div>
 
 			{/* Right Side */}
-			<div className="flex-1 flex flex-col items-center z-50">
+			<div className=" flex-1 flex flex-col items-center z-50">
 				<img
 					src={sushiImage}
 					alt="Sushi Image"
