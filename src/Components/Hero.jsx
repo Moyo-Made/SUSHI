@@ -9,7 +9,7 @@ import { FaRegStar } from "react-icons/fa6";
 
 function Hero() {
 	return (
-		// Left Side
+		//LEFT SIDE
 		<div className="flex">
 			<div className="flex-1 flex justify-center mt-20">
 				<div className="ml-34">
