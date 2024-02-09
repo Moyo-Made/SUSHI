@@ -15,9 +15,9 @@ function Navbar() {
 		setOpenMenu(false);
 	};
 	return (
-		<div className="flex flex-col mr-20 items-center justify-evenly p-2 shadow-md w-full md:flex-row">
+		<div className="flex flex-col items-center justify-evenly p-2 shadow-md w-full md:flex-row">
 			{/* Logo */}
-			<h1 className="text-xl font-bold">
+			<h1 className="sm:flex justify-center items-center md:text-xl font-bold">
 				<span className="bg-[#39DB4A] bg-origin-border rounded-md px-1.5 text-white">
 					S
 				</span>
@@ -27,7 +27,7 @@ function Navbar() {
 			<div className="md:hidden">
 				<button
 					onClick={() => setOpenMenu(!openMenu)}
-					className="text-2xl hover:bg-[#eae8e8] p-1 rounded-md focus:outline-none"
+					className="mr-12 text-2xl hover:bg-[#eae8e8] p-1 rounded-md focus:outline-none"
 				>
 					☰
 				</button>
