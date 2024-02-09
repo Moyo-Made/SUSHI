@@ -10,10 +10,10 @@ import { FaRegStar } from "react-icons/fa6";
 function Hero() {
 	return (
 		//LEFT SIDE
-		<div className="flex">
-			<div className="flex-1 flex justify-center mt-20">
+		<div className=" flex flex-col md:flex-row justify-center items-center">
+			<div className="flex-1 flex justify-center mt-16 text-center md:text-left">
 				<div className="ml-34">
-					<h2 className="text-4xl font-extrabold">
+					<h2 className="text-3xl overflow-hidden md:text-4xl font-extrabold">
 						Sushi Bliss, Every <br />
 						Roll a Flavorful
 						<span className="text-[#39DB4A]"> Kiss</span>
