@@ -13,7 +13,7 @@ function Hero() {
 		<div className=" flex flex-col md:flex-row justify-center items-center">
 			<div className="flex-1 flex justify-center mt-16 text-center md:text-left">
 				<div className="ml-34">
-					<h2 className="text-3xl overflow-hidden md:text-4xl font-extrabold">
+					<h2 className="text-xl mt-[-40px] mr-[30px] overflow-hidden md:text-4xl font-extrabold">
 						Sushi Bliss, Every <br />
 						Roll a Flavorful
 						<span className="text-[#39DB4A]"> Kiss</span>
