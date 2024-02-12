@@ -11,14 +11,14 @@ function Hero() {
 	return (
 		//LEFT SIDE
 		<div className=" flex flex-col md:flex-row justify-center items-center">
-			<div className="flex-1 flex justify-center mt-16 text-center md:text-left">
+			<div className="flex-1 md:flex justify-center mt-16 text-center md:text-left">
 				<div className="ml-34">
-					<h2 className="text-xl mt-[-40px] mr-[30px] overflow-hidden md:text-4xl font-extrabold">
+					<h2 className="text-xl sm:text-4xl mt-[-15px] sm:mt-[5px] overflow-hidden  font-extrabold ">
 						Sushi Bliss, Every <br />
 						Roll a Flavorful
 						<span className="text-[#39DB4A]"> Kiss</span>
 					</h2>
-					<p className="mt-10 font-semibold">
+					<p className="mt-4 ml-6 md:mt-10 w-[15rem] font-semibold">
 						Masters of Maki: Elevate Your Taste Buds with Our Sushi <br />{" "}
 						Creations, Where Tradition Meets Innovation!
 					</p>
@@ -45,7 +45,7 @@ function Hero() {
 					alt="Sushi Image"
 					width={450}
 					height={4500}
-					className="mt-[-20px] mr-24"
+					className="mt-[-20px] mr-24 w-[20rem] flex justify-center"
 				/>
 				<div className="flex flex-row items-center space-x-7 mr-24">
 					{/* Makizushi */}
