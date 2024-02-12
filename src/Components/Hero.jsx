@@ -10,17 +10,17 @@ import { FaRegStar } from "react-icons/fa6";
 function Hero() {
 	return (
 		//LEFT SIDE
-		<div className=" flex flex-col md:flex-row justify-center items-center">
-			<div className="flex-1 md:flex justify-center mt-16 text-center md:text-left">
-				<div className="ml-34">
-					<h2 className="text-xl sm:text-4xl mt-[-15px] sm:mt-[5px] overflow-hidden  font-extrabold ">
+		<div className="flex flex-col md:flex-row justify-center items-center">
+			<div className="flex text-center md:flex-1 justify-center mt-36 md:ml-24 md:mt-10 md:text-left">
+				<div className="md:ml-20">
+					<h2 className="text-2xl md:text-4xl font-extrabold ">
 						Sushi Bliss, Every <br />
 						Roll a Flavorful
 						<span className="text-[#39DB4A]"> Kiss</span>
 					</h2>
-					<p className="mt-4 ml-6 md:mt-10 w-[15rem] font-semibold">
-						Masters of Maki: Elevate Your Taste Buds with Our Sushi <br />{" "}
-						Creations, Where Tradition Meets Innovation!
+					<p className="text-center w-[70%] md:w-[80%] mt-4 font-semibold">
+						Masters of Maki: Elevate Your Taste Buds with Our Sushi Creations,
+						Where Tradition Meets Innovation!
 					</p>
 					<div className="mt-8 flex items-center space-x-4">
 						<h4 className="button shadow shadow-sm-[#39DB4A] w-32 font-semibold">
@@ -39,13 +39,13 @@ function Hero() {
 			</div>
 
 			{/* RIGHT SIDE  */}
-			<div className=" flex-1 flex flex-col items-center z-50">
+			<div className="flex-1 md:mt-14 md:mr-20 items-center z-50">
 				<img
 					src={sushiImage}
 					alt="Sushi Image"
 					width={450}
-					height={4500}
-					className="mt-[-20px] mr-24 w-[20rem] flex justify-center"
+					height={450}
+					className="flex justify-center"
 				/>
 				<div className="flex flex-row items-center space-x-7 mr-24">
 					{/* Makizushi */}
