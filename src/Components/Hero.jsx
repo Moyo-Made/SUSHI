@@ -11,18 +11,18 @@ function Hero() {
 	return (
 		//LEFT SIDE
 		<div className="flex flex-col md:flex-row justify-center items-center">
-			<div className="flex text-center md:flex-1 justify-center mt-36 md:ml-24 md:mt-10 md:text-left">
-				<div className="md:ml-20">
+			<div className="flex text-center md:flex-1 justify-center mt-36 md:ml-32 md:mt-10 md:text-left">
+				<div className="">
 					<h2 className="text-2xl md:text-4xl font-extrabold ">
 						Sushi Bliss, Every <br />
 						Roll a Flavorful
 						<span className="text-[#39DB4A]"> Kiss</span>
 					</h2>
-					<p className="text-center w-[70%] md:w-[80%] mt-4 font-semibold">
-						Masters of Maki: Elevate Your Taste Buds with Our Sushi Creations,
-						Where Tradition Meets Innovation!
+					<p className="ml-14 md:-ml-0 w-[70%] md:w-auto text-center md:text-left mt-4 font-semibold">
+						Masters of Maki: Elevate Your Taste Buds with Our Sushi <br />{" "}
+						Creations, Where Tradition Meets Innovation!
 					</p>
-					<div className="mt-8 flex items-center space-x-4">
+					<div className="ml-10 md:ml-0 mt-8 flex items-center space-x-4">
 						<h4 className="button shadow shadow-sm-[#39DB4A] w-32 font-semibold">
 							Order Now
 						</h4>
@@ -39,7 +39,21 @@ function Hero() {
 			</div>
 
 			{/* RIGHT SIDE  */}
-			<div className="flex-1 md:mt-14 md:mr-20 items-center z-50">
+			<div className="justify-end mb-4 hidden sm:block lg:block xl:block">
+				<div className="relative">
+					<div
+						className="bg-[#f3ebeb] text-red-500 font-semibold rounded-tl-full 
+									rounded-tr-full rounded-bl-full rounded-br-none py-2 px-4 shadow-2xl
+									md:-mr-24 md:-mt-16"
+					>
+						<span>Best sushi ever!</span>
+					</div>
+				</div>
+			</div>
+			<div
+				className="flex-1 mr-10 -mt-10 md:mt-14 md:mr-[14rem] items-center z-50 w-[300px]
+							 md:w-[450px] h-[300px] md:h-[450px]"
+			>
 				<img
 					src={sushiImage}
 					alt="Sushi Image"
@@ -47,9 +61,13 @@ function Hero() {
 					height={450}
 					className="flex justify-center"
 				/>
-				<div className="flex flex-row items-center space-x-7 mr-24">
+				<div className="flex flex-col md:flex-row items-center space-x-7 w-[20rem] md:w-[30rem]">
 					{/* Makizushi */}
-					<div className="flex items-center space-x-3 bg-[#f9f9f9fd] space-y-2 w-52 h-24 ml-20  mt-[-180px] shadow-2xl rounded-xl -z-10">
+					<div
+						className="flex items-center space-x-3 bg-[#ffff] space-y-2 w-[14rem] md:w-[19rem] md:h-24 
+									md:ml-8 -mt-[5rem] md:-mt-[8.5rem] shadow-2xl rounded-xl -z-10
+									md:mb-auto mb-1"
+					>
 						<img
 							width={50}
 							height={50}
@@ -67,13 +85,16 @@ function Hero() {
 								<FaRegStar />
 							</div>
 							<h3 className="font-bold">
-								<span className="text-red-500 font-medium">$</span>18.00
+								<span className="text-red-500 font-medium">$</span> 18.00
 							</h3>
 						</div>
 					</div>
 
 					{/* CaliRoll */}
-					<div className="flex items-center space-x-3 bg-[#f9f9f9fd] space-y-2 w-52 h-24 ml-20  mt-[-180px] shadow-2xl rounded-xl -z-10">
+					<div
+						className="flex items-center space-x-3 bg-[#ffff] space-y-2 w-[14rem] md:w-[19rem] md:h-24 
+									md:mt-[-180px] md:mr-auto mr-10 shadow-2xl rounded-xl -z-10"
+					>
 						<img
 							width={50}
 							height={50}
@@ -91,7 +112,7 @@ function Hero() {
 								<FaRegStar />
 							</div>
 							<h3 className="font-bold">
-								<span className="text-red-500 font-medium">$</span>23.00
+								<span className="text-red-500 font-medium">$</span> 23.00
 							</h3>
 						</div>
 					</div>
