@@ -40,7 +40,7 @@ function Navbar() {
 					{open ? <IoCloseSharp /> : <IoMenu />}
 				</div>
 				<ul
-					className={`md:flex md:items-center md:pb-0 pb-3 absolute md:static bg-white
+					className={`md:flex font-semibold md:items-center md:pb-0 pb-3 absolute md:static bg-white
 								md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all
 								duration-500 ease-in ${
 									open ? "top-20 opacity-100" : "top-[-490px]"
