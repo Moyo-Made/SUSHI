@@ -2,8 +2,8 @@
 import React from "react";
 import playButton from "../assets/Polygon 1.png";
 import sushiImage from "../assets/MAIN SUSHI IMAGE.png";
-import Makizushi from "../assets/_cc226cf5-2147-430e-b16c-84644636b1fe-removebg-preview 1.png";
-import caliRoll from "../assets/_78d38fb4-559d-4cdb-822d-44ecdec0a7f8-removebg-preview 1.png";
+import Makizushi from "../assets/main-dish.png";
+import caliRoll from "../assets/browse-all.png";
 import { FaStar } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa6";
 
