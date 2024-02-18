@@ -1,32 +1,36 @@
 [
 	{
-		"image": "../assets/Sushi Salad 1.png",
+
 		"name": "Best Sushi Salad",
 		"desc": "The best salad in the world",
-		"price": "10.00"
+		"price": "10.00",
+		"image" : "./public/Sushi Salad 1.png"
 	},
 	{
-		"image": "../assets/Sushi Salad -- 2.png",
+		
 		"name": "Zen Zest Sashimi Salad",
 		"desc": "The Zen Zest Salad",
-		"price": "22.00"
+		"price": "22.00",
+		"image" : "./public/Sushi Salad -- 2.png"
 	},
 	{
-		"image": "../assets/Sushi Salad -- 3.png",
+		
 		"name": "Seaside Sushi Salad",
 		"desc": "The best seaside salad in the world",
-		"price": "25.00"
+		"price": "25.00",
+		"image" : "./public/Sushi Salad -- 3.png"
 	},
 	{
-		"image": "../assets/Sushi Salad 1.png",
+		
 		"name": "Best Sushi Salad",
 		"desc": "The best salad in the world",
-		"price": "15.00"
+		"price": "15.00",
+		"image" : "./public/Sushi Salad 1.png"
 	},
 	{
-		"image": "../assets/Sushi Salad -- 2.png",
 		"name": "The Zen Zest Salad",
 		"desc": "The best Zen salad",
-		"price": "23.00"
+		"price": "23.00",
+		"image" : "./public/Sushi Salad -- 2.png"
 	}
 ]
