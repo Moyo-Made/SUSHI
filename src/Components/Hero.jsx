@@ -44,7 +44,7 @@ function Hero() {
 					<div
 						className="bg-[#f3ebeb] text-red-500 font-semibold rounded-tl-full 
 									rounded-tr-full rounded-bl-full rounded-br-none py-2 px-4 shadow-2xl
-									md:-mr-24 md:-mt-16 z-50"
+									md:-mr-24 md:-mt-16 z-1"
 					>
 						<span>Best sushi ever!</span>
 					</div>
