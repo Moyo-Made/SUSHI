@@ -44,14 +44,14 @@ function Hero() {
 					<div
 						className="bg-[#f3ebeb] text-red-500 font-semibold rounded-tl-full 
 									rounded-tr-full rounded-bl-full rounded-br-none py-2 px-4 shadow-2xl
-									md:-mr-24 md:-mt-16"
+									md:-mr-24 md:-mt-16 z-50"
 					>
 						<span>Best sushi ever!</span>
 					</div>
 				</div>
 			</div>
 			<div
-				className="flex-1 mr-10 -mt-10 md:mt-14 md:mr-[14rem] items-center z-50 w-[300px]
+				className="flex-1 mr-10 -mt-10 md:mt-14 md:mr-[14rem] items-center z-10 w-[300px]
 							 md:w-[450px] h-[300px] md:h-[450px]"
 			>
 				<img
