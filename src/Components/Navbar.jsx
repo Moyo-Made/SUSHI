@@ -35,7 +35,7 @@ function Navbar() {
 				{/* Menu Icon for Small Screens */}
 				<div
 					onClick={() => setOpen(!open)}
-					className="text-3xl absolute right-1 top-4 cursor-pointer md:hidden"
+					className="text-3xl absolute right-0 mr-10 top-4 cursor-pointer md:hidden"
 				>
 					{open ? <IoCloseSharp /> : <IoMenu />}
 				</div>
