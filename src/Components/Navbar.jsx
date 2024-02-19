@@ -20,7 +20,7 @@ function Navbar() {
 		{ name: "Offers", link: "/" },
 	];
 	return (
-		<div className="shadow-md w-full fixed top-0 left-0">
+		<div className="shadow-md w-full fixed top-0 left-0 z-50">
 			<div className="md:flex items-center justify-evenly bg-white py-4 md:px-12 px-10">
 				{/* Logo */}
 				<div className="font-bold text-2xl cursor-pointer flex items-center">
@@ -35,7 +35,7 @@ function Navbar() {
 				{/* Menu Icon for Small Screens */}
 				<div
 					onClick={() => setOpen(!open)}
-					className="text-3xl absolute right-4 top-6 cursor-pointer md:hidden"
+					className="text-3xl absolute right-1 top-4 cursor-pointer md:hidden"
 				>
 					{open ? <IoCloseSharp /> : <IoMenu />}
 				</div>
@@ -89,84 +89,6 @@ function Navbar() {
 					</div>
 				</div>
 			</div>
-
-			{/* Navigation Links */}
-			{/* <div
-				className={`flex md:flex  items-center space-x-3 font-bold  ${
-					openMenu ? "flex-col md:flex-row" : "hidden"
-				}`}
-			>
-				<a
-					href=""
-					className={`p-4 ${
-						activeLink === 0 ? "text-[#39DB4A]" : "text-black"
-					}`}
-					onClick={() => handleClick(0)}
-				>
-					Home
-				</a>
-				<a
-					href=""
-					className={`p-4 flex items-center ${
-						activeLink === 1 ? "text-[#39DB4A]" : "text-black"
-					}`}
-					onClick={() => handleClick(1)}
-				>
-					Menu <RiArrowDropDownLine className=" text-[#39DB4A] text-2xl" />
-				</a>
-
-				<a
-					href=""
-					className={`p-4 ${
-						activeLink === 2 ? "text-[#39DB4A]" : "text-black"
-					}`}
-					onClick={() => handleClick(2)}
-				>
-					About Us
-				</a>
-				<a
-					href=""
-					className={`p-4 flex items-center ${
-						activeLink === 3 ? "text-[#39DB4A]" : "text-black"
-					}`}
-					onClick={() => handleClick(3)}
-				>
-					Services <RiArrowDropDownLine className=" text-[#39DB4A] text-2xl" />
-				</a>
-				<a
-					href=""
-					className={`p-4 ${
-						activeLink === 4 ? "text-[#39DB4A]" : "text-black"
-					}`}
-					onClick={() => handleClick(4)}
-				>
-					Offers
-				</a>
-			</div> */}
-
-			{/* Search, cart, contact */}
-			{/* <div className="flex mt-4 md:mt-0 space-x-6 ">
-				<div className="text-2xl">
-					<FiSearch />
-				</div>
-				<div className="relative">
-					<div className="text-2xl" onClick={() => setOpen(!open)}>
-						<RiShoppingBagLine />
-						<div className="w-3 h-3 bg-[#39DB4A] rounded-full flex items-center justify-center absolute top-0 right-0 text-white">
-							<span className="text-sm">8</span>
-						</div>
-					</div>
-				</div>
- 
-				<div className="button">
-					<div className="mr-2">
-						<LuPhoneCall />
-					</div>
-					<div className="font-semibold">
-						<h4>Contact</h4>
-					</div>
-				</div>
-			</div> */}
 		</div>
 	);
 }
