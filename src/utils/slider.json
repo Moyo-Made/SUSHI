@@ -16,16 +16,16 @@
 	{
 		
 		"name": "Seaside Sushi Salad",
-		"desc": "The best seaside salad in the world",
+		"desc": "The best seaside salad",
 		"price": "25.00",
-		"image" : "./public/Sushi Salad -- 3.png"
+		"image" : "./public/Sushi Salad 1.png"
 	},
 	{
 		
 		"name": "Best Sushi Salad",
 		"desc": "The best salad in the world",
 		"price": "15.00",
-		"image" : "./public/Sushi Salad 1.png"
+		"image" : "./public/Sushi Salad -- 2.png"
 	},
 	{
 		"name": "The Zen Zest Salad",
