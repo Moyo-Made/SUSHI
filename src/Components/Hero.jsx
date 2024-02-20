@@ -6,6 +6,7 @@ import Makizushi from "../assets/main-dish.png";
 import caliRoll from "../assets/browse-all.png";
 import { FaStar } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 function Hero() {
 	return (
@@ -50,7 +51,13 @@ function Hero() {
 					</div>
 				</div>
 			</div>
-			<div
+			<motion.div
+				initial={{ x: "15rem", opacity: 1 }}
+				animate={{ x: 0, opacity: 2 }}
+				transition={{
+					duration: 1.5,
+					type: "ease-in",
+				}}
 				className="flex-1 mr-10 -mt-10 md:mt-14 md:mr-[14rem] items-center z-10 w-[300px]
 							 md:w-[450px] h-[300px] md:h-[450px]"
 			>
@@ -117,7 +124,7 @@ function Hero() {
 						</div>
 					</div>
 				</div>
-			</div>
+			</motion.div>
 		</div>
 	);
 }
