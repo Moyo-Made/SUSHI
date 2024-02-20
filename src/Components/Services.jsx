@@ -1,13 +1,27 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React, { useRef } from "react";
 import Catering from "../assets/Vector.png";
 import FastDelivery from "../assets/fi-rr-time-fast.png";
 import OnlineOrdering from "../assets/fi-rr-shopping-cart-check.png";
 import GiftCard from "../assets/fi-rr-gift.png";
+import { useScroll, motion, useTransform } from "framer-motion";
 
 const Services = () => {
+	const ref = useRef(null);
+	const { scrollYProgress } = useScroll({
+		target: ref,
+		offset: ["0 1", "1.33 1"],
+	});
+	const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+	const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 	return (
-		<div className="md:flex flex-col md:mt-40 mt-20">
+		<motion.div 
+		ref={ref}
+			style={{
+				scale: scaleProgress,
+				opacity: opacityProgress,
+			}}
+		className="md:flex flex-col md:mt-40 mt-20">
 			{/* Left side */}
 			<div className="flex-1 md:ml-40 ml-10">
 				<div className="text-red-500 text-sm font-bold">
@@ -87,7 +101,7 @@ const Services = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
