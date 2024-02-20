@@ -1,14 +1,29 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React, { useRef } from "react";
 import TestImg from "../assets/Group 36.png";
 import Testimony1 from "../assets/Mask group (2).png";
 import Testimony2 from "../assets/Mask group (3).png";
 import Testimony3 from "../assets/Mask group (1).png";
 import { FaStar } from "react-icons/fa";
+import { useScroll, motion, useTransform } from "framer-motion";
 
 const Testimonials = () => {
+	const ref = useRef(null);
+	const { scrollYProgress } = useScroll({
+		target: ref,
+		offset: ["0 1", "1.33 1"],
+	});
+	const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+	const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 	return (
-		<div className=" flex flex-col md:flex-row justify-evenly items-center mt-14 md:mt-24">
+		<motion.div
+			ref={ref}
+			style={{
+				scale: scaleProgress,
+				opacity: opacityProgress,
+			}}
+			className=" flex flex-col md:flex-row justify-evenly items-center mt-14 md:mt-24"
+		>
 			{/* Left Side */}
 			<div className="flex-1 -ml-4 md:ml-40 w-[280px] h-[280px] md:w-[300px] md:h-[300px]">
 				<img src={TestImg} alt="Testimonial Image" width={350} height={350} />
@@ -62,7 +77,7 @@ const Testimonials = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
