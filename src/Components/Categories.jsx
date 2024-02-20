@@ -1,13 +1,29 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React, { useRef } from "react";
 import MainDish from "../assets/main-dish.png";
 import BreakFast from "../assets/breakfast.png";
 import SushiCombo from "../assets/sushi-combo.png";
 import BrowseAll from "../assets/browse-all.png";
+import { useScroll, motion, useTransform } from "framer-motion";
 
 const Categories = () => {
+	const ref = useRef(null);
+	const { scrollYProgress } = useScroll({
+		target: ref,
+		offset: ["0 1", "1.33 1"],
+	});
+	const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+	const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+
 	return (
-		<div className="mx-auto text-center mt-20">
+		<motion.div
+			ref={ref}
+			style={{
+				scale: scaleProgress,
+				opacity: opacityProgress,
+			}}
+			className="mx-auto text-center mt-20"
+		>
 			<span className="block text-red-500 text-sm font-semibold">
 				CUSTOMER FAVOURITES
 			</span>
@@ -74,7 +90,7 @@ const Categories = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
