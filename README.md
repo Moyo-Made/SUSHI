@@ -13,7 +13,7 @@ A visually appealing website that showcases different types of sushi. Built with
 
 ## Demo
 
-Check out the live demo of the website [https://getsushi.netlify.app/](#).
+Check out the live demo of the website [https://getsushi.netlify.app/](#)
 
 ## Features
 
